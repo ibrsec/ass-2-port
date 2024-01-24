@@ -1,2 +1,314 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Rampart+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Rampart+One&display=swap");
+/* font-family: 'Bungee Shade', sans-serif; */
+/* font-family: 'Rampart One', sans-serif; */
+:root {
+  --button-bgc-color: #7f5af0;
+  --navbar-button-bgc-hover-color: #7e725d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
 
+body {
+  font-size: 1.6rem;
+  background-color: #004643;
+  color: white;
+}
+
+/*! Header */
+header {
+  text-align: center;
+  padding: 4rem 0 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #121e25;
+  box-shadow: 0 .4px 20px #64fa91;
+  z-index: 10;
+
+}
+
+header h1 {
+  font-family: "Bungee Shade", sans-serif;
+  letter-spacing: 2px;
+  font-size: 4.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  color: #64fa91;
+  transition: 1.5s all ease;
+  white-space: nowrap;
+}
+
+header h1:hover{
+    transform: scale(1.1);
+}
+
+header .navbar {
+}
+header .navbar a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2.3rem;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+  transition: .5s all ease;
+  font-weight: 600;
+
+}
+
+header .navbar a:hover{
+    background-color: #004643;
+    color: #64fa91;
+    box-shadow: 0 0 60px #abd1c6;
+}
+
+
+/* ! Main */
+main{
+    margin: 0 2rem;
+    text-align: center;
+    width: 90% ;
+    margin: 120px auto;   
+
+}
+
+/* ? Description */
+
+.desc-container{
+ /* margin: auto;    */
+ padding: 10rem 0  ;
+ height: calc(100vh - 120px);
+}
+.desc-container h2{
+    /* font-family: 'Rampart One', sans-serif; */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4.8rem;
+    font-weight: 500;
+    color: #fff;
+
+}
+.desc-container img{
+    width: 50vh;
+}
+
+
+/* ? Projects */
+.projects-container{
+text-align: center;
+}
+.projects-container h3,
+footer h3{
+font-size: 3rem;
+color: #64fa91;
+margin-bottom: 2rem;
+}
+
+.projects-container h3 span,
+footer h3 span{
+transition: .3s all ease;
+text-decoration: none;
+cursor:none;
+
+}
+.projects-container h3 span:hover
+,footer h3 span:hover{
+    border-bottom: 1px solid #64fa91;;
+    padding-bottom: 3px;    
+text-decoration: none;
+
+}
+
+.project-img-contaier{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+
+
+
+.project-img-contaier img{
+    /* width: 30%; */
+    width: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow:5px 5px 10px  #333;
+    opacity: .85;
+    transition: .7s all ease;
+z-index: 2;
+    
+}
+
+.project-img-contaier img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+
+
+
+footer{
+    text-align: center;
+}
+footer h3 span{
+}
+.social-links {
+    margin-bottom: 15px;
+}
+footer .social-links div{
+display: inline-block;
+margin-bottom: 2rem;
+text-align: left;
+/* border :1px solid red; */
+margin-left: 1rem;
+margin-right: 1rem;
+}
+
+
+
+
+.social-links div i{
+    font-size: 2.5rem;
+}
+footer .social-links div a{
+    color: white;
+    text-decoration: none;
+    font-size: 2.4rem;
+    /* margin-right: 4rem; */
+    color: #abd1c6;
+    text-align:left;
+
+}
+
+footer .social-links div a:hover{
+    color: #64fa91;
+}
+.github-link{
+    text-align: left;
+    /* width: 200px; */
+    /* border :1px solid red; */
+}
+.fa-github{
+    /* border :1px solid red; */
+}
+form{
+    text-align: center;
+    width: 60%;
+    /* border :1px solid red; */
+    margin: 1rem auto;
+}
+form h5{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+
+}
+form input,
+form textarea{
+    display: block;
+    outline: none;
+
+    border :3px solid #64fa91;
+    border-radius: 5px;
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: #004643;
+color: white;
+font-size: 1.7rem;
+
+}
+
+form input:hover,
+form textarea:hover{
+    background-color: #083a37;
+
+}
+
+form textarea{
+    height: 13rem;
+    padding-top: 1.4rem;
+    resize: none;
+}
+form input[type="submit"]{
+background-color: #64fa91;;
+color: #121e25;
+font-weight: 500;
+transition: .6s all ease;
+cursor: pointer;
+}
+
+
+form input[type="submit"]:hover{
+background-color: #004643;
+color: #64fa91;
+
+}
+
+.top-btn{
+    font-family: 'Rampart One', sans-serif;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    padding: 5px;
+    white-space:nowrap;
+    display: inline-block;
+    background-color: #121e25;
+    color: white;
+    outline: none;
+    border: 3px solid #64fa91;
+    font-weight: 600;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: .5s all ease;
+}
+
+.top-btn:hover{
+    
+    background-color: #64fa91;
+    color: #121e25;
+    outline: none;
+    border: 5px solid #121e25; 
+    /* #64fa91; */
+    /* #121e25; */
+}
+.top-btn span{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+@media(max-width:700px){
+html{
+    font-size: 60%;
+}
+
+header h1 {
+    font-size: 7vw;
+    /* font-family: "Bungee Shade", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    color: #64fa91;
+    transition: 1.5s all ease;
+    white-space: nowrap; */
+  }
+}
