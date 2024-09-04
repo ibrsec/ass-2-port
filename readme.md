@@ -16,7 +16,7 @@
     <a href="https://github.com/ibrsec/profile-page"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://ibrsec.github.io/profile-page/">View Demo</a>
+    <a href="https://profile-page-beryl.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/ibrsec/profile-page/issues">Report Bug</a>
     ·
@@ -56,7 +56,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Home Furnishing Project](./img/pgif.gif)](https://ibrsec.github.io/profile-page/)
+[![Home Furnishing Project](./img/pgif.gif)](https://profile-page-beryl.vercel.app/)
 
 <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ad? -->
 <!--  -->
